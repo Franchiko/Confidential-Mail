@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-size: 16px;
+}
+
+main{
+    position: relative;
+    background-color: #f5ece1;
+}
+
+#email{
+    padding: 50px;
+    margin-top: 50px;
+    width: 500px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+#confidential{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    margin: 30px;
+    color: #db1b1b;
+    border: 5px solid #db1b1b;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 5px;
+    pointer-events: none;
+    transform: rotate(-25deg);
+}
+
+#top-secret{
+    display: inline-block;
+    position: absolute;
+    top: 330px;
+    right: 100px;
+    color: #db1b1b;
+    border: 5px solid #db1b1b;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px;
+    pointer-events: none;
+    transform: rotate(15deg);
+}
+
+p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 0.8em;
+}
+
+p:first-of-type{
+    margin-top: 50px;
+}
+
+p:last-of-type {
+    margin-bottom: 40px;
+}
+
+.blurred{
+    font-weight: bold;
+    color: #333;
+    filter: blur(3px);
+}
